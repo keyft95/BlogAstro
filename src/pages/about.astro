@@ -1,0 +1,30 @@
+---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import'../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Sobre mi";
+
+const identity = {
+  firstName: "Keysha",
+  country: "Costa Rica",
+  occupation: "Estudiante",
+  hobbies: ["pilates", "ceramica", "gatos"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro"]
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
+const skillColor = "navy";
+const fontWeight = "bold";
+const textCase = "Capitalize";
+
+
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>about</p>
+</BaseLayout>
